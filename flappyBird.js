@@ -84,7 +84,7 @@ const render = () => {
     flight += gravity;
     flyHeight = Math.min(flyHeight + flight, canvas.height - size[1]);
   } else {
-    ctx.src = 'images/basuda.PNG', 432, Math.floor((index % 9) / 3) * size[1], ...size, ((canvas.width / 2) - size[0] / 2), flyHeight, ...size;
+    ctx.drawImage(img.src = "images/basuda.PNG" Math.floor((index % 9) / 3) * size[1], ...size, ((canvas.width / 2) - size[0] / 2), flyHeight, ...size);
     flyHeight = (canvas.height / 2) - (size[1] / 2);
       // text accueil
     ctx.fillText(`Bad Basudas : ${bestScore}`, 85, 245);
@@ -108,7 +108,6 @@ img.onload = render;
 // start game
 document.addEventListener('click', () => gamePlaying = true);
 window.onclick = () => flight = jump;
-
 
 
 
