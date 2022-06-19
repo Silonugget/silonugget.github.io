@@ -8,7 +8,7 @@ let gamePlaying = false;
 const gravity = .29;
 const speed = 3.2;
 const size = [51, 36];
-const jump = -9.5;
+const jump = -4.5;
 const cTenth = (canvas.width / 10);
 
 let index = 0,
