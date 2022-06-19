@@ -2,7 +2,7 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const img = new Image();
 img.src = "https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png";
-
+img.src = "images/basuda.png"
 // general settings
 let gamePlaying = false;
 const gravity = .45;
@@ -80,7 +80,7 @@ const render = () => {
   }
   // draw bird
   if (gamePlaying) {
-    ctx.drawImage(img, 432, Math.floor((index % 9) / 3) * size[1], ...size, cTenth, flyHeight, ...size);
+    ctx.drawImage(img.src = "images/basuda.png", Math.floor((index % 9) / 3) * size[1], ...size, cTenth, flyHeight, ...size);
     flight += gravity;
     flyHeight = Math.min(flyHeight + flight, canvas.height - size[1]);
   } else {
