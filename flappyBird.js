@@ -80,7 +80,7 @@ const render = () => {
   }
   // draw bird
   if (gamePlaying) {
-    ctx.drawImage(img.src = "images/basuda.png", Math.floor((index % 9) / 3) * size[1], ...size, cTenth, flyHeight, ...size);
+    ctx.drawImage(img.src = "images/basuda.PNG", Math.floor((index % 9) / 3) * size[1], ...size, cTenth, flyHeight, ...size);
     flight += gravity;
     flyHeight = Math.min(flyHeight + flight, canvas.height - size[1]);
   } else {
